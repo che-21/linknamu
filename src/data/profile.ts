@@ -1,7 +1,10 @@
+import type { BrandIconName } from "@/components/BrandIcon";
+
 export type LinkItem = {
   id: string;
   title: string;
   url: string;
+  icon: BrandIconName;
 };
 
 export type Profile = {
@@ -14,11 +17,10 @@ export type Profile = {
 export const profile: Profile = {
   name: "박지연",
   bio: "세계 최강 바이브코더",
-  imageUrl: "/profile.svg",
+  imageUrl: "/chiikawa.PNG",
   links: [
-    { id: "github", title: "GitHub", url: "https://github.com" },
-    { id: "blog", title: "Blog", url: "https://velog.io" },
-    { id: "instagram", title: "Instagram", url: "https://instagram.com" },
-    { id: "youtube", title: "YouTube", url: "https://youtube.com" },
+    { id: "github", title: "깃허브", url: "https://github.com/che-21", icon: "github" },
+    { id: "blog", title: "블로그", url: "https://parkdelay.tistory.com/", icon: "tistory" },
+    { id: "email", title: "이메일", url: "mailto:cieletoile623@gmail.com", icon: "gmail" },
   ],
 };
